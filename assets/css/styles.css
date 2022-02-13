@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, button, input, select, textarea {
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --bg: #F8F8F8;
+    --gray: #9E9E9E;
+    --primary: #5A189A;
+    --white: #FFF;
+}
+
+section {
+    display: flex;
+    height: 100vh;
+    margin: 0 auto;
+    width: 100%;
+}
+
+section .left {
+    background: var(--bg);
+    flex: 2;
+    width: 840px;
+}
+
+section .left .background {
+    background-color: var(--bg);
+    background-image: url(../img/background.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    filter: brightness(0.8);
+    height: 100vh;
+}
+
+section .right {
+    align-items: center;
+    background: var(--primary);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    width: 600px;
+}
+
+section .right h3 {
+    margin-bottom: 1rem;
+}
+
+section .right input {
+    background: transparent;
+    border-radius: 50px;
+    border: 2px solid var(--white);
+    color: var(--white);
+    height: 40px;
+    margin-bottom: 1rem;
+    outline: none;
+    padding: 10px 35px;
+    width: 300px;
+}
+
+section .right .email {
+    position: relative;
+}
+
+section .right .email span {
+    left: 20px;
+    position: absolute;
+    top: -2px;
+    transform: translate(-50%, 50%);
+}
+
+section .right .password {
+    position: relative;
+}
+
+section .right .password span {
+    left: 20px;
+    position: absolute;
+    top: -2px;
+    transform: translate(-50%, 50%);
+}
+
+section .right button {
+    border-radius: 50px;
+    border: 0;
+    color: var(--gray);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 40px;
+    transition: all ease 0.2s;
+    width: 300px;
+}
+
+section .right button:hover {
+    background: transparent;
+    border: 2px solid var(--white);
+    color: var(--white);
+    font-weight: bold;
+}
